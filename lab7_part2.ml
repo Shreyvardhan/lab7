@@ -17,12 +17,6 @@ files to complete all exercises:
 
  *)
 
-(* This line is only necessary because our solution files are named
-   differently; they have a _soln suffix attached. It wouldn't be used
-   in your code. To see our solution, you can look at the files
-   color_soln.ml and color_soln.mli. *)
-module Color = Color_soln ;;
-
 (*======================================================================
 Part 2: Files as modules
 
@@ -76,7 +70,7 @@ Exercise 2A: Extract the red channel of the color named Red, naming
 the result "red_channel".
 ......................................................................*)
 
-let red_channel : int = 
+let red_channel : int =
   Color.red (Color.color_named Color.Red) ;;
 
 (* We hope you'll find the module system quite useful, once you get
@@ -117,7 +111,7 @@ find our solution in color_soln.mli.
    *)
 
 (*......................................................................
-Exercise 2C: 
+Exercise 2C:
 
 In the file "color.ml", modify the implementation of a color module as
 you see fit. Make the design choices that you think would be best for
